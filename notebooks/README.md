@@ -31,7 +31,13 @@ Helpers (`corpus.py`, `judges.py`, `ep_eval.py`, …) and `data/` live beside th
 5. [`context_window_optimization.ipynb`](context_window_optimization.ipynb)  
 6. [`adaptive_rag_capstone.ipynb`](adaptive_rag_capstone.ipynb) — **Advanced Agentic Week 1 close**; AI Engineering runs this as Week 2 #1 instead
 
-## Week 3 (eval + shipping)
+## AI Engineering Intensive — Week 3 (live order)
+
+1. [`judge_meta_eval.ipynb`](judge_meta_eval.ipynb) — LLM-as-judge meta-eval: agreement + bias probes  
+2. [LLM Model Drift](https://colab.research.google.com/drive/14E6DMP_RGctUPqjI6VMa8EFlggXR7fat?usp=sharing) — external Colab; detecting and measuring model drift  
+3. [`context_compression.ipynb`](context_compression.ipynb) — 5-strategy compression bake-off under rule-survival
+
+## Advanced Agentic Systems Intensive — Week 3 (eval + shipping)
 
 1. [`judge_meta_eval.ipynb`](judge_meta_eval.ipynb)  
 2. [`dspy_judge_optimization.ipynb`](dspy_judge_optimization.ipynb)  
@@ -39,6 +45,8 @@ Helpers (`corpus.py`, `judges.py`, `ep_eval.py`, …) and `data/` live beside th
 4. [`plan_act_bakeoff.ipynb`](plan_act_bakeoff.ipynb)  
 5. [`agent_workflow_api.ipynb`](agent_workflow_api.ipynb) + [`../apps/agent_api/`](../apps/agent_api/)  
 6. Capstone: [`../apps/forge/`](../apps/forge/)
+
+`context_compression.ipynb` is shared across both courses: Advanced Agentic runs it in Week 2, AI Engineering in Week 3.
 
 ## Setup notes
 

@@ -77,21 +77,28 @@ python3 -m jupyter notebook
 
 Production code lives in [`src/`](src/) (`multi_agent/`, `mcp_demo/`, `memory/`, `middleware/`, `shared/`); the notebooks are thin walkthroughs that call into it. The SDR capstone wires the same primitives behind `USE_SUPERVISOR=1` and `USE_MEMORY_AGENT=1`. See [`notebooks/README.md`](notebooks/README.md) for costs and architecture notes.
 
-### Week 3 — Evaluation, Memory at Scale, and a Capstone Agent
+### AI Engineering Intensive — Week 3
 
-(Primarily Advanced Agentic; usable by both cohorts.)
+| Order | Artifact | Segment |
+|---|---|---|
+| 1 | [`judge_meta_eval.ipynb`](notebooks/judge_meta_eval.ipynb) | LLM-as-judge meta-eval: agreement and bias probes |
+| 2 | [LLM Model Drift](https://colab.research.google.com/drive/14E6DMP_RGctUPqjI6VMa8EFlggXR7fat?usp=sharing) (Colab) | Detecting and measuring model drift over time |
+| 3 | [`context_compression.ipynb`](notebooks/context_compression.ipynb) | Context compression: 5-strategy bake-off under rule-survival |
 
-| Notebook / app | Segment |
-|---|---|
-| [`judge_meta_eval.ipynb`](notebooks/judge_meta_eval.ipynb) | LLM-as-judge meta-eval: agreement and bias probes |
-| [`dspy_judge_optimization.ipynb`](notebooks/dspy_judge_optimization.ipynb) | Optimizing the judge with DSPy |
-| [`memory_benchmarks.ipynb`](notebooks/memory_benchmarks.ipynb) | Benchmarking semantic / episodic / procedural memory |
-| [`plan_act_bakeoff.ipynb`](notebooks/plan_act_bakeoff.ipynb) | Plan-then-act vs act-only vs trajectory-probe routing |
-| [`agent_workflow_api.ipynb`](notebooks/agent_workflow_api.ipynb) | Ship an agentic workflow as a service |
-| [`apps/agent_api/`](apps/agent_api/) | FastAPI plan/research/reflect/artifact + FastMCP wrapper |
-| [`apps/forge/`](apps/forge/) | Capstone: Forge coding agent (Electron + FastAPI) |
+### Advanced Agentic Systems Intensive — Week 3
+
+| Order | Artifact | Segment |
+|---|---|---|
+| 1 | [`judge_meta_eval.ipynb`](notebooks/judge_meta_eval.ipynb) | LLM-as-judge meta-eval: agreement and bias probes |
+| 2 | [`dspy_judge_optimization.ipynb`](notebooks/dspy_judge_optimization.ipynb) | Optimizing the judge with DSPy |
+| 3 | [`memory_benchmarks.ipynb`](notebooks/memory_benchmarks.ipynb) | Benchmarking semantic / episodic / procedural memory |
+| 4 | [`plan_act_bakeoff.ipynb`](notebooks/plan_act_bakeoff.ipynb) | Plan-then-act vs act-only vs trajectory-probe routing |
+| 5 | [`agent_workflow_api.ipynb`](notebooks/agent_workflow_api.ipynb) + [`apps/agent_api/`](apps/agent_api/) | Ship an agentic workflow as a service (FastAPI + FastMCP wrapper) |
+| 6 | [`apps/forge/`](apps/forge/) | Capstone: Forge coding agent (Electron + FastAPI) |
 
 The Week 3 throughline is that **the eval is the product**: every claim about a judge, a memory tier, or a planning policy needs paired comparisons and a probe-weighted metric, not vibes. See [`notebooks/README.md`](notebooks/README.md) and [`apps/forge/README.md`](apps/forge/README.md).
+
+> `context_compression.ipynb` is shared: Advanced Agentic runs it in Week 2, AI Engineering runs it in Week 3.
 
 ## Prerequisites
 
